@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher's Website</title>
+  <style>
+    /* Reset default margin and padding */
+    body, h1, h2, h3, h4, h5, h6, ul, li, p {
+      margin:0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      height: 120px;
+      align-items: baseline;
+      background-color: #0d7691;
+      background-image: url("photos/wallaper.jpg");
+      background-position: center;
+      color: white;
+      padding: 20px;
+      word-spacing: 0.5cm;
+    }
+
+    .header img {
+      max-width: 100px;
+      height: fit-content;
+      position: flex;
+      border-radius: 50%;
+    }
+
+    .header nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .header nav ul li {
+      margin-right: 25px;
+      transition: 0.3 ease;
+    }
+
+    .header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      transition: all 0.3 ease;
+    }
+    
+    .header nav ul li:hover {
+      transform: translateY(3px)
+    }
+
+    .header nav ul li a:hover {
+      color: #d7b728;
+      font-style: normal;
+    }
+
+    .content {
+      display: flex;
+      flex: 1;
+      font-size: 15px;
+      line-height: 25px;
+      margin: 20p;
+      text-align: justify;
+      position: relative;
+      opacity: 100px;
+    }
+
+    .content h3{
+        color: #0d7691;
+       font-style: bold;
+       font-size: 0.4cm;
+    }
+
+    .content h2{
+        color: #0d7691;
+        font-style: bold;
+        font-size: 0.4cm;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .left-panel {
+      flex: 0 0 250px;
+      background-color: #e0d6d6;
+      padding: 20px;
+      text-align: left;
+      line-height: cm;
+      text-emphasis-color: gray;
+      font-size: 15px;
+      position: relative;
+      transition: all 0.3s ease; /* Transition for hover effect */
+    }
+
+    .left-panel:hover {
+      background-color: #c0b1b1; /* Change background color on hover */
+    }
+    .left-panel img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      display: none; /* Hide by default */
+      margin: 100px;
+      margin-top: 10px;
+      background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+      position: relative;
+      z-index: 1; /* Ensure content is above the background image */
+    }
+
+    .main-content.active {
+      display: block; /* Show when active */
+    }
+
+    .footer {
+      background-color: #333;
+      color: rgba(163, 152, 152, 0.993);
+      text-align: center;
+      padding: 10px 0;
+      bottom: 0;
+      width: 100%;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <img src="photos/university of ghana.png" alt="Teacher's Photo">
+      <nav>
+        <ul>
+          <li><i><b><a href="inddx.html">Home</a></b></i></li>
+          <li><i><b><a href="research.html">Research</a></b></i></li>
+          <li><i><b><a href="teaching.html">Teaching</a></b></i></li>
+          <li><i><b><a href="publication.html">Publication</a></b></i></li>
+          <li><i><b><a href="awards.html">Awards</a></b></i></li>
+          <li><i><b><a href="talks.html">Talks</a></b></i></li>
+          <li><i><b><a href="my_student.html">MyStudent</a></b></i></li>
+        </ul>
+      </nav>
+    </header>
+  <div class="content">
+    <div class="left-panel">
+      <img src="photos/teacher's photo representation.jpg" alt="Teacher's Photo">
+      <h4>Dr Augustine Larweh Mahu</h4>
+      <br>
+      <p>Email: almahu@ug.edu.gh.com/ aglarwah@gmail.com</p>
+      <br>
+      <p>Ghanaian</p>
+      <br>
+      <p>Phone:0552310771</p>
+      <br>
+      <p>Legon, Accra</p>
+    </div>
+
+    <main id="home" class="main-content active">
+      <h2>WELCOME</h2>
+      <p>You have reached the webpage of Dr Augustine larweh, a postdoctoral fellow in mathematics at the University of Ghana. Here you can find information about my research interests, publications, an overview of my code and contact details. </p>
+      <br>
+      <h3><p>ACADEMIC QUALIFICATIONS</p></h3>
+       <p>Ph.D.: (July 5, 2018); Theoretical/Mathematical Physics; School of Physics, University of The
+        Witwatersrand</p>
+        <br>
+
+        <p>M.Sc.: (May 19, 2010); Mathematics; Department of Mathematics; Kwame Nkrumah Univer-
+        sity of Science and Technology</p>
+        <br>
+
+       <p>B.Sc.: (June 24, 2006); Mathematics; Department of Mathematics; Kwame Nkrumah Univer-
+        sity of Science and Technology</p>
+        <br>
+
+        <p><h3>DISSERTATION / THESIS</h3></p>
+        <p>(PhD.) Mahu, A. L. (2018). Integrability in Giant Graviton Dynamics, School of Physics,
+        University of The Witwatersrand, Johannesburg, South Africa.
+        (MSc.) Mahu, A. L. (2010). Two-Electron Capture From Helium-Like Atomic Systems by
+        Completely Stripped Projectiles, Department of Mathematics, Kwame Nkrumah University of
+        Science and Technology, Kumasi, Ghana.
+        (BSc.) Mahu, A. L. (2006). —, Department of Mathematics, Kwame Nkrumah University of
+        Science and Technology, Kumasi, Ghana.
+        4. OTHER PROFESSIONAL AND ACADEMIC SHORT TERM COURSES
+        ATTENDED (with certificates)
+        (June 22, 2010 – August 13, 2010 ) Certificate in Physics Data Analysis. A Non-member State
+        Student Summer Programme. Atlas Detector, European Organization for Nuclear Research
+        (CERN), Geneva, Switzerland.(Contact Person: Prof. Kitavi Asamagan, Atlas Detector Group,
+        CERN, Geneva, Switzerland)</p>
+        <br>
+        
+       <p><h3>CURRENT POSITION</h3></p>
+       <p>Lecturer; (August 1, 2018 – To Date) Department of Mathematics, University of Ghana, Ac-
+        cra, Legon, Ghana.
+        
+       <p>Visiting Researcher; (November 1, 2019 – October 31, 2022 ), School of Physics, Faculty of
+        
+        Science, University of The Witwatersrand, Johannesburg, South Africa. (Contact Person: Pro-
+        fessor R. de Mello Koch, School of Physics, University of The Witwatersrand, Johannesburg,
+        South Africa)</p>
+        <br>
+
+       <p> External Examiner; (June 12, 2022 – To Date), Department of Physics, Faculty of Natural
+        and Agricultural Sciences, University of Pretoria, Pretoria, South Africa. (Contact Person: Ms
+        M. E. Mokhehle, Faculty of Natural and Agricultural Sciences,)</p>
+        <br>
+
+        <h3>POSITION HELD (ACADEMIC)</h3>
+       <p> Visiting Researcher; (July 13, 2019 – August 27, 2019 ), School of Physics, Faculty of Science,
+        University of The Witwatersrand, Johannesburg, South Africa. (Contact: Professor R. de Mello
+        Koch, School of Physics, University of The Witwatersrand, Johannesburg, South Africa)
+        Teaching Assistant; (January 2018 – June 2018 ), African Institute for Mathematical Sciences
+        (AIMS Ghana). (Contact: Prof. F. T. Oduro, Academic Director, AIMS Ghana)</p>
+        <br>
+       <p>Tutor; (January 2015 – December 2017 ), University of The Witwatersrand, Johannesburg,
+        South Africa. (Contact: School of Physics Secretary, University of The Witwatersrand)
+        Teaching Assistant; (August 2012 – June 2014 ), African Institute for Mathematical Sciences
+        (AIMS Ghana). (Contact: Prof. F. T. Oduro, Academic Director, AIMS Ghana)</p>
+        <br>
+
+        <p>Tutor (National Service Person); (August 2009 – August 2010 ), Kwame Nkrumah Univer-
+        sity of Science and Technology(KNUST), Kumasi, Ghana. (Contact: Secretary, Department of
+        Mathematics, KNUST)</p>
+        <br>
+        <h3>POSITION HELD (NON-ACADEMIC)</h3>
+        <p>Fellow of Commonwealth Hall, (August 1, 2018 – to date); Commonwealth Hall, University of
+        Ghana, Legon.</p>
+        <br>
+        <p>Member, University Teachers Association of Ghana (August 1, 2018 – To Date), University of
+        Ghana (UTAG-UG).</p>
+    </main>
+
+  </div>
+
+  <footer class="footer">
+    &copy; University of Ghana
+  </footer>
+</div>
+
+</body>
+</html>
